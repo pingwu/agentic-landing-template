@@ -1,5 +1,7 @@
 # Agentic Landing Page Template
 
+> **CSE 642 student?** Start with [CHECKPOINT-1.md](CHECKPOINT-1.md): clone the `CP1-start` tag, run `docker compose up`, and open <http://localhost:3000>.
+
 > **"When AI can do anything for you, what will you build?"**
 
 ---
@@ -33,7 +35,7 @@ Companies want to lock you into their solutions. You must use their tools. You c
 
 1. **Develop locally** — Your files, your machine, your control
 2. **Use standard technologies** — Next.js, React, Docker (no proprietary lock-in)
-3. **Deploy to AWS** — Portable containers, exportable anytime
+3. **Deploy anywhere (optional, later)** — Portable containers, exportable anytime
 4. **AI assists, you own** — The code is yours, not trapped in a builder
 
 ### Natural Language Development
@@ -66,7 +68,7 @@ and social media icons for LinkedIn and GitHub"
 > *"The new professional superpower is not coding; it's orchestrating AI agents to build for you."*
 > — MACA Curriculum
 
-**Deploy to AWS is as easy as following this project.**
+**Deploying later is optional: see `docs/` for older AWS guides.**
 
 ---
 
@@ -74,8 +76,7 @@ and social media icons for LinkedIn and GitHub"
 
 This template teaches modern cloud development through hands-on practice. You'll deploy a professional landing page while learning containers, cloud services, and AI-assisted coding — skills that transfer to any project you want to build next.
 
-**Course**: CSE651 - Software Development with Agentic AI ([CSTU.edu](https://cstu.edu))
-**Demo**: AWS Builder Loft, San Francisco (March 2, 2026)
+**Course use**: CSE 642 Agentic AI and Applications ([CSTU.edu](https://cstu.edu)), Checkpoint 1
 
 ---
 
@@ -894,13 +895,11 @@ The landing page template delivers all three while opening the door to deeper le
 
 ## Credits
 
-**Course**: CSE 651 - Software Development with Agentic AI
+**Course use**: CSE 642 Agentic AI and Applications
 **Institution**: [CSTU.edu](https://cstu.edu)
 **Instructor**: Ping Wu
-**Demo Event**: [AWS Builder Loft, San Francisco - March 2, 2026](https://luma.com/f73qb06t)
 
 ### Acknowledgments
-- AWS for cloud infrastructure and Builder Loft event
 - Anthropic, Google, and OpenAI for AI coding assistants
 - The open source community for the amazing tools
 
