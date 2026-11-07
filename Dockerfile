@@ -1,9 +1,9 @@
 # PING AI Services - Production Dockerfile
 # Multi-stage build for Next.js with standalone output
-# Optimized for AWS App Runner deployment
+# Runs on any container host
 
 # Stage 1: Build the application
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 WORKDIR /app
 
 # Copy package files first for better layer caching
@@ -22,7 +22,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 
 # Stage 2: Production image
-FROM node:20-alpine AS runner
+FROM node:22-alpine AS runner
 WORKDIR /app
 
 # Image metadata
@@ -48,10 +48,10 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 # Switch to non-root user
 USER nextjs
 
-# Expose port 3000 (App Runner default)
+# Expose port 3000
 EXPOSE 3000
 
-# Set hostname for App Runner
+# Listen on all interfaces inside the container
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 

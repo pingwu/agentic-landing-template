@@ -2,12 +2,15 @@
   "name": "agentic-landing-template",
   "version": "1.0.0",
   "description": "Customizable landing page template for AI-assisted development with Gemini CLI or Claude Code",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "docker:dev": "docker compose --profile dev up -d --build",
+    "docker:dev": "docker compose up -d --build",
     "docker:prod": "docker compose --profile prod up -d --build",
     "docker:down": "docker compose down",
     "docker:clean": "docker compose down -v --rmi local",

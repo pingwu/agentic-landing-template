@@ -1,17 +1,17 @@
 {
   "name": "Agentic Landing Template",
-  "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "devcontainer",
-  "runServices": ["devcontainer"],
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "dev",
+  "runServices": [
+    "dev"
+  ],
   "workspaceFolder": "/workspace",
-
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers/features/aws-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-
   "customizations": {
     "vscode": {
       "extensions": [
@@ -33,35 +33,29 @@
         },
         "typescript.updateImportsOnFileMove.enabled": "always",
         "tailwindCSS.experimental.classRegex": [
-          ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+          [
+            "cva\\(([^)]*)\\)",
+            "[\"'`]([^\"'`]*).*?[\"'`]"
+          ]
         ]
       }
     }
   },
-
-  "forwardPorts": [3000, 3001],
+  "forwardPorts": [
+    3000
+  ],
   "portsAttributes": {
     "3000": {
-      "label": "Next.js Dev",
-      "onAutoForward": "notify"
-    },
-    "3001": {
-      "label": "Production Preview",
-      "onAutoForward": "silent"
+      "label": "Landing page",
+      "onAutoForward": "openBrowser"
     }
   },
-
-  "postCreateCommand": "npm install && echo '✅ Dev container ready! Run: npm run dev'",
+  "postCreateCommand": "echo 'Dev container ready. The page starts at port 3000.'",
   "postStartCommand": "git config --global --add safe.directory /workspace",
-
   "remoteUser": "node",
-
-  "mounts": [
-    "source=${localWorkspaceFolder}/.git,target=/workspace/.git,type=bind,consistency=cached"
-  ],
-
   "containerEnv": {
     "NODE_ENV": "development",
     "NEXT_TELEMETRY_DISABLED": "1"
-  }
+  },
+  "overrideCommand": false
 }

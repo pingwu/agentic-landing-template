@@ -1,5 +1,11 @@
 # Agentic Landing Page Template
 
+> **Working rules for AI coding tools (CSE 642 Checkpoint 1)**
+> - The project runs in Docker. Start it with `docker compose up` and open <http://localhost:3000>. Do not ask the student to install Node or run `npm` on their own computer.
+> - Students may have little shell or coding experience. Explain each change in plain words, name the file you changed, and use the correct technical term next to any plain-language description.
+> - Keep changes to the landing-page content (`app/page.tsx`, `components/`) unless the student asks for more. Never put keys or passwords in the code.
+> - See `CHECKPOINT-1.md` for the student steps.
+
 > **"When AI can do anything for you, what will you build?"**
 
 This template teaches you to build and deploy cloud solutions with AI assistance — starting with your professional landing page.
@@ -18,7 +24,7 @@ This isn't just a landing page template — it's your first step into building c
 
 Expand what you can offer clients by understanding the same tools your technical teams use. After this project, you'll speak the language of modern software development.
 
-### For Students (CSE651)
+### For Students
 
 Learn real-world deployment workflows used by companies worldwide. This is hands-on cloud computing, not just theory.
 
@@ -66,7 +72,7 @@ After each phase, you should be able to answer:
 **Project**: Agentic Landing Page Template
 **Purpose**: Learn AI-assisted development by building something real
 **Approach**: Container-first development
-**Course**: CSE651 - Software Development with Agentic AI (CSTU.edu)
+**Course use**: CSE 642 Agentic AI and Applications (CSTU.edu)
 
 ### Use Cases
 
@@ -401,10 +407,9 @@ You now have the foundation. The tools. The experience. What matters most to you
 
 ## About This Project
 
-**Course**: CSE651 - Software Development with Agentic AI
+**Course use**: CSE 642 Agentic AI and Applications
 **Institution**: CSTU.edu
 **Instructor**: Ping Wu
-**Demo**: AWS Builder Loft, San Francisco (March 2, 2026)
 
 ### Contributing
 
